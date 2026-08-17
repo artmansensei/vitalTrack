@@ -1,0 +1,20 @@
+{
+  "meals": [
+    ["Day 1", "3 Egg Omelet + 3 Flatbreads/Tortillas + 1 Cup Whole Milk", "Oats-Banana-Nut Smoothie + 3 Dates", "Rice + Lentil Soup + Beef/Steak Curry + Mashed Potatoes", "Roasted Chickpeas + Peanuts + Light Trail Mix", "Rice + Chicken Curry + Thick Lentils + Mixed Veggies"],
+    ["Day 2", "3 Boiled Eggs + 3 Butter-Toasted Breads + 1 Apple", "2 Ripe Bananas + A Handful of Almonds/Cashews", "Rice + Black Lentils + Fish Curry + Potato-Eggplant Stir-fry", "1 Bowl Cream of Wheat/Oatmeal + Raisins + Peanuts", "Rice + 2 Bowls Thick Lentils + Scrambled Eggs + Mashed Potatoes"],
+    ["Day 3", "Egg Wrap (2 Eggs) + 1 Bowl Oatmeal with Milk", "1 Cup Greek Yogurt + 1 Apple/Banana + Mixed Nuts", "Rice + Yellow Lentils + Roasted Chicken + Veggie Stir-fry", "Puffed Rice + Mixed Nuts + Boiled Chickpeas", "Rice + Spicy Fish Curry + Thick Lentils + Veggies"],
+    ["Day 4", "3 Poached Eggs + 3 Whole Wheat Breads + 1 Banana", "Banana-Date Milkshake (3 Dates + 1 Glass Milk)", "Rice + Lentils + Beef/Lamb Curry + Veggie Stir-fry", "1 Bowl Spiced Boiled Chickpeas + Peanuts", "Rice + Spicy Fried Chicken + Lentils + Mashed Potatoes"],
+    ["Day 5", "3 Boiled Eggs + Potato & Cottage Cheese (Paneer) Curry + 3 Flatbreads", "Handful of Mixed Nuts + 2 Dates + 1 Banana", "Chicken/Beef Biryani (or Flavored Rice) + Fresh Salad", "1 Glass Turmeric/Warm Milk + Oatmeal Biscuits", "Rice + 2 Bowls Thick Lentils + Rich Fish Curry"],
+    ["Day 6", "3 Scrambled Eggs + 3 Flatbreads + 1 Glass Milk", "Greek Yogurt with Granola/Oats + 1 Banana + Honey", "Rice + Thick Lentils + Shrimp/Prawn Curry + Mixed Veggies", "2 Boiled Potatoes (Mashed with Butter & Salt) + Nuts", "Rice + Chicken Stew + Lentils + Veggie Stir-fry"],
+    ["Day 7", "3 Egg Omelet + 2 Stuffed Potato Breads + 1 Bowl Oatmeal", "1 Glass Banana-Peanut Butter Smoothie + 3 Dates", "Rice + Chickpea Curry + Chicken/Beef + Salad", "Light Popcorn/Puffed Rice + Nuts + 1 Boiled Egg", "Rice + 2 Spicy Eggs + Thick Lentils + Roasted Veggies"]
+  ],
+  "workouts": [
+    ["Day 1: Push & Core", "Standard Push-ups (3 sets x 12-15 reps) · Backpack Shoulder Press (3 sets x 10 reps) · Bench Dips (3 sets x 12 reps) · Bicycle Crunches (3 sets x 20 reps) · Plank (3 sets x 60 secs)"],
+    ["Day 2: Pull & Legs", "Goblet Squats w/ Heavy Backpack (4 sets x 12 reps) · Backpack Rows (4 sets x 10 reps) · Romanian Deadlifts w/ Backpack (3 sets x 12 reps) · Backpack Bicep Curls (3 sets x 12 reps)"],
+    ["Day 3: Active Recovery & Stretch", "30-Minute Light Brisk Walking · Deep Full-Body Stretching (Hamstrings, Chest, Hip Flexors) · Joint Mobility Drills"],
+    ["Day 4: Legs & Core Focus", "Walking Lunges w/ Backpack (3 sets x 12 reps per leg) · Glute Bridges (3 sets x 15 reps) · Calf Raises (4 sets x 20 reps) · Hanging Knee Raises or Reverse Crunches (3 sets x 15 reps)"],
+    ["Day 5: Upper Body Conditioning", "Diamond Push-ups or Decline Push-ups (3 sets x 10 reps) · Overhead Backpack Tricep Extensions (3 sets x 12 reps) · Backpack Hammer Curls (3 sets x 12 reps) · Russian Twists (3 sets x 30 reps)"],
+    ["Day 6: Full Body HIIT & Power", "Burpees (3 sets x 10 reps) · Jump Squats (3 sets x 12 reps) · Mountain Climbers (3 sets x 45 secs) · Push-ups to Failure (2 sets) · Plank Hold (2 sets x max time)"],
+    ["Day 7: Rest & Grow", "Complete Rest Day · Hyper-Hydration (Drink extra water) · 8 Hours Quality Sleep (Crucial for muscle tissue repair and weight gain)"]
+  ]
+}
