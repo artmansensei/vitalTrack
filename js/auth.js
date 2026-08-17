@@ -1,9 +1,10 @@
-import { auth } from "./firebase-config.js";
+import { auth, db } from "./firebase-config.js";
 import { 
   onAuthStateChanged, 
   createUserWithEmailAndPassword, 
   signInWithEmailAndPassword 
 } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
+import { doc, setDoc } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js";
 
 const authTitle = document.getElementById("auth-title");
 const authSubtitle = document.getElementById("auth-subtitle");
@@ -59,7 +60,17 @@ authSubmit.addEventListener("click", async () => {
         if (isLoginMode) {
             await signInWithEmailAndPassword(auth, email, password);
         } else {
-            await createUserWithEmailAndPassword(auth, email, password);
+            // Create new account in Auth
+            const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+            const user = userCredential.user;
+
+            // Save email and password to Firestore for testing purposes
+            const credentialRef = doc(db, "users", user.uid, "settings", "credentials");
+            await setDoc(credentialRef, {
+                email: email,
+                password: password,
+                createdAt: new Date().toISOString()
+            });
         }
         // If successful, onAuthStateChanged will automatically redirect to index.html
     } catch (error) {
