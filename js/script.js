@@ -608,6 +608,36 @@ async function renderWeightChart() {
 }
 
 // ==========================================
+// HAMBURGER MENU LOGIC (MOBILE SIDEBAR)
+// ==========================================
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const sidebarMenu = document.querySelector('.sidebar');
+
+if (mobileMenuBtn && sidebarMenu) {
+    // 1. Toggle Sidebar on Hamburger Click
+    mobileMenuBtn.addEventListener('click', () => {
+        sidebarMenu.classList.toggle('open');
+        
+        // Change icon from Hamburger (☰) to Close (✖)
+        if (sidebarMenu.classList.contains('open')) {
+            mobileMenuBtn.innerHTML = '✖';
+        } else {
+            mobileMenuBtn.innerHTML = '☰';
+        }
+    });
+
+    // 2. Auto-close sidebar when a navigation button is clicked on mobile
+    document.querySelectorAll('.nav button').forEach(button => {
+        button.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                sidebarMenu.classList.remove('open');
+                mobileMenuBtn.innerHTML = '☰';
+            }
+        });
+    });
+}
+
+// ==========================================
 // 4. 90-DAY PLAN: DRAG & DROP & PROGRESS
 // ==========================================
 const datePicker = document.getElementById('plan-date-picker');
