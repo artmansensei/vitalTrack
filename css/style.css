@@ -112,6 +112,42 @@ button,input,select{font:inherit}.app{display:flex;min-height:100vh}.sidebar{wid
         margin-top: 10px;
     }
 }
+
+
+/* ==========================================
+   HAMBURGER MENU & MOBILE SIDEBAR
+========================================== */
+@media (max-width: 768px) {
+    /* Show the hamburger button */
+    #mobile-menu-btn {
+        display: block !important;
+    }
+    
+    /* Hide sidebar completely off-screen */
+    .sidebar {
+        width: 260px !important;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        box-shadow: 5px 0 25px rgba(0,0,0,0.5) !important;
+    }
+    
+    /* Bring sidebar back when open class is added */
+    .sidebar.open {
+        transform: translateX(0);
+    }
+    
+    /* Expand main content */
+    .main {
+        margin-left: 0 !important;
+        width: 100% !important;
+        padding-top: 70px !important; /* Space for the hamburger button */
+    }
+    
+    /* Ensure icon and text are fully visible in the mobile menu */
+    .brand span, .nav button span {
+        display: inline !important;
+    }
+}
 /* 
  ==========================================
    LIGHT MODE OVERRIDES
